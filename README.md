@@ -18,3 +18,14 @@
 同时，由于 JUnit 5 采用了基于扩展点而非 runner 的架构方式，部分常用的测试框架使用方式也有变化，比如 mockito。目前而言，mockito 需要通过定制的扩展来运行，JUnit 官方已经给出了一个[扩展](https://github.com/junit-team/junit5-samples/tree/master/junit5-mockito-extension)，本项目也用上了。但在原生支持程度上，mockito 官方表示[JUnit 5支持会随 Mockito 3.0的发布而发布](https://github.com/mockito/mockito/issues/445)
 ，可能还稍有时日要等待。
 
+## 构建
+
+```
+git clone git@github.com:linesh-simplicity/junit5-condition.git
+cd junit5-condition
+./gradlew test build 
+```
+
+![](./junit5-through-gradle.png)
+
+![](./junit5-through-intellij-idea.png)
