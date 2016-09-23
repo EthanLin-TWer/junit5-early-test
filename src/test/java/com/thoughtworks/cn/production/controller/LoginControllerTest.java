@@ -1,5 +1,6 @@
 package com.thoughtworks.cn.production.controller;
 
+import com.thoughtworks.cn.condition.Disabled;
 import com.thoughtworks.cn.production.domain.LoginStatus;
 import com.thoughtworks.cn.production.domain.ResponseEntity;
 import com.thoughtworks.cn.production.mockito.MockitoExtension;
@@ -41,6 +42,7 @@ public class LoginControllerTest {
     }
 
     @Test
+    @Disabled
     public void should_return_login_success_when_call_login_service_and_username_and_password_are_matched() throws Exception {
         String password = "password";
         String username = "username";
