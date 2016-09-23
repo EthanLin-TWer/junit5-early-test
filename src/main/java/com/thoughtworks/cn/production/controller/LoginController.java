@@ -16,6 +16,7 @@ public class LoginController {
             return new ResponseEntity(LoginStatus.USERNAME_NOT_PROVIDED, "user name cannot be null/empty");
         if (nullOrEmpty(password))
             return new ResponseEntity(LoginStatus.PASSWORD_NOT_PROVIDED, "password cannot be null/empty");
+
         return loginService.login(username, password);
     }
 

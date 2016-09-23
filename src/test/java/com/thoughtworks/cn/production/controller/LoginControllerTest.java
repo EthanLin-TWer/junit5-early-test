@@ -42,8 +42,8 @@ public class LoginControllerTest {
 
     @Test
     public void should_return_login_success_when_call_login_service_and_username_and_password_are_matched() throws Exception {
-        String password = "isAwesome!@#";
-        String username = "linesh";
+        String password = "password";
+        String username = "username";
         given(loginService.login(username, password)).willReturn(new ResponseEntity(LoginStatus.LOGIN_SUCCESSFUL, "login successful"));
 
         ResponseEntity result = loginController.login(username, password);
