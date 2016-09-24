@@ -6,10 +6,10 @@ import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
-public class Windows7Tests {
+public class WontRunOnMacOsTest {
     @Test
     @DisabledOnOs(OS.MAC_OS)
-    public void should_be_run_on_windows_7_and_fail() throws Exception {
-        assertEquals(1 + 1, 3, "please fix this if you are not a Mac OS user.");
+    void does_not_run_on_mac_os() throws Exception {
+        assertEquals(1 + 1, 3, "change your computer to Mac will solve this failing test");
     }
 }

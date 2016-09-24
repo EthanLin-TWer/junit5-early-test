@@ -4,12 +4,12 @@ import com.thoughtworks.cn.condition.DisabledOnOs;
 import com.thoughtworks.cn.condition.OS;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertTrue;
 
-public class MacOSTests {
+public class WontRunOnWindows7Test {
     @Test
     @DisabledOnOs(OS.WINDOWS_7)
-    void should_be_run_on_mac_os() throws Exception {
-        assertEquals(1 + 1, 2);
+    public void does_not_run_on_windows_7() throws Exception {
+        assertTrue(true);
     }
 }
