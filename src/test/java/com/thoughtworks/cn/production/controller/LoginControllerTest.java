@@ -42,7 +42,6 @@ public class LoginControllerTest {
     }
 
     @Test
-    @Disabled
     public void should_return_login_success_when_call_login_service_and_username_and_password_are_matched() throws Exception {
         String password = "password";
         String username = "username";
