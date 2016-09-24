@@ -8,8 +8,8 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 
 public class MacOSTests {
     @Test
-    @DisabledOnOs(OS.MAC_OS)
+    @DisabledOnOs(OS.WINDOWS_7)
     void should_be_run_on_mac_os() throws Exception {
-        assertEquals(1 + 1, 3, "please fix this if you are not a Mac OS user.");
+        assertEquals(1 + 1, 2);
     }
 }
