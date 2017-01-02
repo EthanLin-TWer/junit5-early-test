@@ -29,3 +29,8 @@ cd junit5-condition
 ![](./junit5-through-gradle.png)
 
 ![](./junit5-through-intellij-idea.png)
+
+## 参考文章
+
+* [JUnit 5 早期试用体验（一）](http://www.infoq.com/cn/articles/JUnit-5-Early-Test-Drive)
+* [JUnit 5 早期试用体验（二）](http://www.infoq.com/cn/articles/JUnit-5-Early-Test-Drive-Part-2)
