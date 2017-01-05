@@ -13,7 +13,11 @@
 
 ## IDE 和构建工具的支持
 
-目前，[gradle](https://github.com/junit-team/junit5-samples/tree/master/junit5-gradle-consumer) 和 [maven](https://github.com/junit-team/junit5-samples/tree/master/junit5-maven-consumer) 都已经有插件对 JUnit 5提供了最基本的支持，仍不完美；Intellij IDEA 在[2016.2](https://www.jetbrains.com/idea/whatsnew/#v2016-2)版本中也已支持 JUnit 5，目前还有小的瑕疵，但也能满足最基本的需要。Eclipse 团队截止本读我撰写时，官方仍未有插件支持，表示正在努力。
+截止至本读我撰写时，以下平台及构建工具对 JUnit 的支持情况如下：
+
+* Intellij IDEA 对 JUnit 5 的 M2 和 M3 版都有了支持，[2016.3](https://blog.jetbrains.com/idea/2016/08/intellij-idea-2016-3-eap-is-open/) 及以前的版本可以运行 M2 以前的测试，[2016.3.1 RC](https://blog.jetbrains.com/idea/2016/12/intellij-idea-2016-3-1-rc-updates-junit-5-support-to-m3/) 版本开始则支持 M3
+* Eclipse 团队截止本读我撰写时，官方仍未有插件支持。官方表示正在努力
+* [gradle](https://github.com/junit-team/junit5-samples/tree/master/junit5-gradle-consumer) 和 [maven](https://github.com/junit-team/junit5-samples/tree/master/junit5-maven-consumer) 都有插件对 JUnit 5 提供了最基本的支持
 
 同时，由于 JUnit 5 采用了基于扩展点而非 runner 的架构方式，部分常用的测试框架使用方式也有变化，比如 mockito。目前而言，mockito 需要通过定制的扩展来运行，JUnit 官方已经给出了一个[扩展](https://github.com/junit-team/junit5-samples/tree/master/junit5-mockito-extension)，本项目也用上了。但在原生支持程度上，mockito 官方表示[JUnit 5支持会随 Mockito 3.0的发布而发布](https://github.com/mockito/mockito/issues/445)
 ，可能还稍有时日要等待。
@@ -21,9 +25,9 @@
 ## 构建
 
 ```
-git clone git@github.com:linesh-simplicity/junit5-condition.git
-cd junit5-condition
-./gradlew test build 
+git clone git@github.com:linesh-simplicity/junit5-early-test.git
+cd junit5-early-test
+./gradlew junitPlatformTest
 ```
 
 ![](./junit5-through-gradle.png)
