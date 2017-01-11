@@ -1,9 +1,9 @@
-# README(读我)
+# README 读我
 
-这是一个试水 JUnit 5的仓库。JUnit 5中引入的一些革新让人后端架构细胞还是挺兴奋的，它最主要的受益者在于各大 IDE 和构建工具厂商，以及 JUnit 团队内部，原因是以前大而全的 JUnit 4限制了工具开发者的定制能力，反过来又使得他们依赖于 JUnit 4的内部 API，进一步又限制了 JUnit 团队自身对于项目的掌控能力，使得他们不敢随便修改哪怕是内部的 API。
+这是一个试水 JUnit 5 的仓库。JUnit 5 中引入的一些革新让人后端架构细胞还是挺兴奋的，它最主要的受益者在于各大 IDE 和构建工具厂商，以及 JUnit 团队内部，原因是以前大而全的 JUnit 4 限制了工具开发者的定制能力，反过来又使得他们依赖于 JUnit 4的内部 API，进一步又限制了 JUnit 团队自身对于项目的掌控能力，使得他们不敢随便修改哪怕是内部的 API。
 
-基于这个现状，全新的 JUNit 5提出了"[扩展点优于特性](https://github.com/junit-team/junit5/wiki/Core-Principles)
-"的设计理念，首先分开了测试 API 和运行 API，并进一步将 JUnit 5分成三个子项目：负责提供测试 API 
+基于这个现状，全新的 JUNit 5 提出了"[扩展点优于特性](https://github.com/junit-team/junit5/wiki/Core-Principles)
+"的设计理念，首先分开了测试 API 和运行 API，并进一步将 JUnit 5 分成三个子项目：负责提供测试 API 
 的`junit-jupiter-api`、负责运行测试的引擎`junit-jupiter-engine`，以及兼容低版本测试的运行引擎`junit-vintage
 `。其次，团队提出对于功能的扩展，提供扩展点要优于直接提供特性。可以看出团队在选择 JUnit 核心功能上的用心与经验。
 
