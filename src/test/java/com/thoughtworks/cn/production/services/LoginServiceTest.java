@@ -14,7 +14,7 @@ public class LoginServiceTest {
         ResponseEntity result = loginService.login("username", "password");
 
         assertEquals(result.getLoginStatus(), LoginStatus.LOGIN_SUCCESSFUL);
-        assertEquals(result.getMessage(), "login should not be successful");
+        assertEquals(result.getMessage(), "login successful");
     }
 
     @Test
